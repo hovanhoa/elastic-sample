@@ -22,5 +22,11 @@ npm install
 ```
 ### 3. Run the Script
 ```bash
-node index.js
+node create-index.js
+```
+This will create an index with sample badminton yards in HCMC.
+
+### 4. Run search
+```bash
+node search-yards.js
 ```
