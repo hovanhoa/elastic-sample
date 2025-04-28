@@ -21,13 +21,16 @@ async function searchBadmintonYards(location) {
                 match: {
                   location: {
                     query: location,
-                    fuzziness: "AUTO"
+                    fuzziness: 1,
+                    minimum_should_match: "90%"
                   }
                 }
               }
-            ]
+            ],
+            minimum_should_match: 1
           }
-        }
+        },
+        min_score: 0.5
       }
     })
 
